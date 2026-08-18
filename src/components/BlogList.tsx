@@ -1,4 +1,4 @@
-export const BlogList = ({ blogs, title, handleDelete }: any) => {
+export const BlogList = ({ blogs, title }: any) => {
   return (
     <div className="blog-list">
       <h2>{title}</h2>
@@ -6,7 +6,7 @@ export const BlogList = ({ blogs, title, handleDelete }: any) => {
         <div className="blog-preview" key={blog.id}>
           <h2>{blog.title}</h2>
           <p>Written by {blog.author}</p>
-          <button onClick={() => handleDelete(blog.id)}>delete blog</button>
+          
         </div>
       ))}
     </div>
